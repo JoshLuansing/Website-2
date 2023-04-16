@@ -25,10 +25,10 @@ html, body {
 
 .black-block {
     color: white;
-    --color-start: grey;
+    --color-start: #e1e1e1;
     --color-mid: #f7e9b3;
     --color-end: #00b894;
-    background-image: radial-gradient(circle at center, var(--color-start), var(--color-mid), var(--color-end) 70%, rgba(0, 184, 148, 0.1) 90%);
+    background-image: radial-gradient(circle at center, var(--color-start)20%, var(--color-mid), var(--color-end) 70%, rgba(0, 184, 148, 0.1) 90%);
     background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
     padding: 0px;
