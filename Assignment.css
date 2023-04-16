@@ -1,4 +1,8 @@
- 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .bg-image {
     background-image: url('0Q6udFa-mazda-rx7-fc-wallpapers.jpeg');
     height: 100vh;
@@ -7,11 +11,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -10vh;
-   
-  }
+}
 
-
-  .bg-message {
+.bg-message {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,37 +21,41 @@
     color: white;
     text-align: center;
     font-size: 48px;
-  }
+}
 
 .black-block {
-    color: lightseagreen;
-    --color-start: lightgreen;
-    --color-end: #ffb3b3;
-    background-image: linear-gradient(to bottom, var(--color-start), var(--color-end));
-    background-size: 400% 400%;
+    color: white;
+    --color-start: #341f97;
+    --color-mid: #623aa2;
+    --color-end: #00b894;
+    background-image: radial-gradient(circle at center, var(--color-start), var(--color-mid), var(--color-end) 70%, rgba(0, 184, 148, 0.1) 90%);
+    background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
     padding: 0px;
     text-align: center;
-    height: 100vh;
-   
+    height: 130vh;
+    position: relative;
 }
 
-  @keyframes gradientAnimation {
+@keyframes gradientAnimation {
     0% {
-      background-position: 0% 0%;
+        background-position: 0% 0%;
     }
+
     50% {
-      background-position: 100% 100%;
+        background-position: 100% 100%;
     }
+
     100% {
-      background-position: 0% 0%;
+        background-position: 0% 0%;
     }
 }
+
 .black-block h2 {
-    font-size: 46px;
+    font-size: 56px;
     margin-bottom: 20px;
-    -webkit-text-stroke: 2px lightseagreen; 
-    -webkit-text-fill-color: lightseagreen;
+    -webkit-text-stroke: 2px dark red;
+    -webkit-text-fill-color: brown;
 }
 
 .second-image {
@@ -61,7 +67,7 @@
     background-size: cover;
 }
 
-  .second-image-message {
+.second-image-message {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,17 +75,19 @@
     color: white;
     text-align: center;
     font-size: 48px;
-  }
+}
 
 .navbar {
     background-color: #333;
     overflow: hidden;
+    position: relative;
 }
 
     .navbar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        position: relative;
     }
 
     .navbar li {
@@ -106,15 +114,17 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar li {
-        float: none;
-    }
 
-        .navbar li a {
-            display: block;
-            text-align: left;
-        }
+
+#greeting {
+    font-size: 64px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: relative;
+    top: 2cm;
 }
 
+    #greeting.show {
+        opacity: 1;
+    }
 
