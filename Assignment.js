@@ -1,5 +1,5 @@
 ﻿const greetingElem = document.getElementById("greeting");
-const greetings = ["안녕하세요","Hi", "Hola", "Bonjour", "Zdravstvuyte", "Guten Tag", "こんにちは", "你好", "Olá","ਸਤ ਸ੍ਰੀ ਅਕਾਲ", "नमस्ते", "مرحبًا", "Salve", "Γειά σου"];
+const greetings = ["안녕하세요", "Hi", "Hola", "Bonjour", "Zdravstvuyte", "Guten Tag", "こんにちは", "你好", "Olá", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ"];
 let index = 0;
 
 setInterval(() => {
